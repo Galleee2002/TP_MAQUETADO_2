@@ -216,6 +216,9 @@ body {
 .main-nav ul li {
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 50px;
 }
 
 .main-nav ul li a {
@@ -791,6 +794,8 @@ body {
   background: linear-gradient(135deg, var(--main-blue), var(--main-yellow));
   color: white;
   box-shadow: 0 8px 30px rgba(0, 191, 166, 0.3);
+  background-size: 350px;
+  background-position: center;
 }
 
 .btn-primary:hover {
