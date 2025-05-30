@@ -230,6 +230,7 @@ body {
   display: block;
   text-transform: uppercase;
   letter-spacing: 1px;
+  overflow: hidden;
 }
 
 .main-nav ul li a::before {
