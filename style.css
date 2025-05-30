@@ -867,3 +867,396 @@ body {
   }
 }
 
+.activities-section {
+  padding: 120px 70px 80px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.activities-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 50%,
+      rgba(0, 191, 166, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 180, 0, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 80%,
+      rgba(102, 126, 234, 0.1) 0%,
+      transparent 50%
+    );
+  animation: backgroundFloat 15s ease-in-out infinite;
+}
+
+@keyframes backgroundFloat {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.02);
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(135deg, #667eea, #764ba2, #00bfa6, #ffb400);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 5s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.section-title::before {
+  content: "🎯";
+  position: absolute;
+  top: -20px;
+  left: 20%;
+  font-size: 2rem;
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.section-title::after {
+  content: "⭐";
+  position: absolute;
+  top: -10px;
+  right: 15%;
+  font-size: 1.5rem;
+  animation: sparkle 2s ease-in-out infinite 0.5s;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+    opacity: 1;
+  }
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--main-black);
+  margin-bottom: 80px;
+  opacity: 0.8;
+  position: relative;
+  z-index: 2;
+  font-weight: 300;
+  font-style: italic;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.activities-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.activity-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  animation: cardFadeIn 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+.activity-card:nth-child(1) { animation-delay: 0.2s; }
+.activity-card:nth-child(2) { animation-delay: 0.4s; }
+.activity-card:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.activity-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--main-blue), var(--main-yellow));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  border-radius: 25px;
+}
+
+.activity-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(0, 191, 166, 0.2);
+  border: 2px solid rgba(0, 191, 166, 0.3);
+}
+
+.activity-card:hover::before {
+  opacity: 0.05;
+}
+
+.activity-icon {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 25px;
+  animation: iconFloat 3s ease-in-out infinite;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activity-card:nth-child(1) .activity-icon { animation-delay: 0s; }
+.activity-card:nth-child(2) .activity-icon { animation-delay: 1s; }
+.activity-card:nth-child(3) .activity-icon { animation-delay: 2s; }
+
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+.activity-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--main-black);
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.activity-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--main-blue), var(--main-yellow));
+  border-radius: 2px;
+  animation: titleUnderline 0.8s ease-out 0.5s both;
+}
+
+@keyframes titleUnderline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+.activity-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--main-black);
+  margin-bottom: 30px;
+  opacity: 0.85;
+  text-align: justify;
+}
+
+.info-list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.info-list li {
+  font-size: 1rem;
+  color: var(--main-black);
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.info-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--main-blue);
+  font-weight: bold;
+  font-size: 1.2rem;
+  animation: checkMark 0.5s ease-out;
+}
+
+.info-list li:hover {
+  padding-left: 35px;
+  color: var(--main-blue);
+}
+
+@keyframes checkMark {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.activity-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 18px 35px;
+  background: linear-gradient(135deg, var(--main-blue), var(--main-yellow));
+  color: var(--main-white);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.1rem;
+}
+
+.activity-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.activity-btn:hover::before {
+  left: 100%;
+}
+
+.activity-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 191, 166, 0.4);
+}
+
+.special-card {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(0, 191, 166, 0.1));
+  border: 2px solid rgba(0, 191, 166, 0.2);
+}
+
+.special-card .activity-title {
+  background: linear-gradient(135deg, var(--accent-purple), var(--main-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.highlight-box {
+  background: rgba(255, 180, 0, 0.1);
+  border-left: 4px solid var(--main-yellow);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-style: italic;
+  position: relative;
+}
+
+.highlight-box::before {
+  content: "💡";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .activities-section {
+    padding: 80px 30px 50px;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+  }
+  
+  .activities-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .activity-card {
+    padding: 30px;
+  }
+  
+  .activity-title {
+    font-size: 2rem;
+  }
+  
+  .special-card {
+    grid-column: 1;
+  }
+}
