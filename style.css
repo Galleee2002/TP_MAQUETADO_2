@@ -174,6 +174,8 @@ body {
   margin: 0;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   position: relative;
+  display: inline-block;
+  z-index: 1;
 }
 
 .site-title::after {
@@ -181,14 +183,19 @@ body {
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 0;
+  width: 0%;
   height: 3px;
   background: linear-gradient(90deg, var(--main-yellow), var(--main-blue));
+  border-radius: 1.5px;
   animation: titleUnderline 2s ease-out 0.5s forwards;
+  box-shadow: 0 2px 8px rgba(255, 180, 0, 0.4);
 }
 
 @keyframes titleUnderline {
-  to {
+  0% {
+    width: 0%;
+  }
+  100% {
     width: 100%;
   }
 }
@@ -1536,7 +1543,6 @@ legend {
   }
 }
 
-/* HERO OPTIMIZADO PARA ARGENTINA */
 .argentina-hero {
   background: linear-gradient(
     135deg,
@@ -1556,7 +1562,6 @@ legend {
   box-shadow: 0 30px 100px rgba(0, 0, 0, 0.2);
 }
 
-/* Efecto de border animado para el hero */
 .argentina-hero::before {
   content: "";
   position: absolute;
@@ -1699,7 +1704,6 @@ legend {
   text-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Partículas flotantes de fondo */
 .argentina-hero .particles {
   position: absolute;
   top: 0;
@@ -2159,174 +2163,6 @@ legend {
   }
 }
 
-/* Responsive para el hero de Argentina */
-@media (max-width: 768px) {
-  .main-header {
-    padding: 20px 30px;
-  }
-
-  .main-nav {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .site-title {
-    font-size: 2rem;
-  }
-
-  .main-nav ul {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .hero-section {
-    padding: 40px 30px;
-  }
-
-  .hero-content {
-    padding: 60px 40px;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .provinces-section {
-    padding: 80px 30px 50px;
-  }
-
-  .section-title {
-    font-size: 3rem;
-  }
-
-  .province-card {
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-
-  .province-card.reverse {
-    flex-direction: column;
-  }
-
-  .card-image {
-    height: 250px;
-  }
-
-  .card-content {
-    padding: 30px;
-  }
-
-  .activities-section {
-    padding: 80px 30px 50px;
-  }
-
-  .activities-container {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 0;
-  }
-
-  .activity-card {
-    padding: 30px;
-  }
-
-  .activity-title {
-    font-size: 2rem;
-  }
-
-  .special-card {
-    grid-column: 1;
-  }
-
-  .highlight-box {
-    padding: 15px 50px 15px 15px;
-  }
-
-  .contact-section {
-    padding: 80px 30px 50px;
-  }
-
-  .contact-form {
-    padding: 30px;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  fieldset {
-    padding: 20px;
-  }
-
-  .checkbox-group,
-  .radio-group {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .form-actions {
-    flex-direction: column;
-  }
-
-  .btn-reset,
-  .btn-submit {
-    flex: none;
-  }
-
-  /* Responsive para Argentina */
-  .argentina-section {
-    padding: 60px 30px;
-  }
-
-  .argentina-hero {
-    padding: 60px 30px;
-    margin: 20px auto 60px;
-  }
-
-  .argentina-hero h1 {
-    font-size: 3rem;
-    letter-spacing: 2px;
-  }
-
-  .argentina-hero h1::before,
-  .argentina-hero h1::after {
-    display: none;
-  }
-
-  .argentina-hero p {
-    font-size: 1.2rem;
-  }
-
-  .content-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .places-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .video-section {
-    padding: 40px 20px;
-  }
-
-  .video-section h2 {
-    font-size: 2rem;
-  }
-
-  .video-section h2::before {
-    display: none;
-  }
-}
-
 /*Sección para planear tu viaje */
 .planning-section {
   padding: 120px 70px 80px;
@@ -2608,9 +2444,10 @@ legend {
 
 .steps-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
   margin-bottom: 60px;
+  align-items: stretch;
 }
 
 .step-card {
@@ -2626,6 +2463,10 @@ legend {
   text-align: center;
   animation: stepFadeIn 0.8s ease-out;
   animation-fill-mode: both;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
 }
 
 .step-card:nth-child(1) {
@@ -2777,6 +2618,7 @@ legend {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.85);
   margin-bottom: 25px;
+  flex-grow: 1;
 }
 
 .services-section {
@@ -2844,8 +2686,12 @@ legend {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 30px;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .service-item {
@@ -2857,6 +2703,11 @@ legend {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  height: auto;
 }
 
 .service-item::before {
@@ -2898,6 +2749,7 @@ legend {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
+  flex-grow: 1;
 }
 
 .cta-section {
