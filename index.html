@@ -23,36 +23,38 @@
         </nav>
         <section class="hero-section">
           <div class="hero-content">
-              <div class="floating-elements">
-                  <div class="floating-element">🌎</div>
-                  <div class="floating-element">🏔️</div>
-                  <div class="floating-element">🏖️</div>
-                  <div class="floating-element">🌟</div>
-              </div>
-              
-              <div class="airplane-container">
-                  <div class="airplane">✈️</div>
-              </div>
-              <h1 class="hero-title">Descubrí Argentina</h1>
-              <p class="hero-subtitle">Tu aventura comienza aquí</p>
-              <p class="hero-description">
-                  En VIALUME somos especialistas en crear experiencias únicas e inolvidables por toda Argentina. 
-                  Desde las majestuosas cataratas del Iguazú hasta los glaciares de la Patagonia, desde los viñedos 
-                  de Mendoza hasta las coloridas quebradas del Norte. Planificamos cada detalle de tu viaje para que 
-                  solo te preocupes por disfrutar y crear recuerdos que durarán toda la vida.
-              </p>
-              <div class="hero-buttons">
-                  <a href="#destinos" class="hero-btn btn-primary">
-                      <span>🗺️</span>
-                      Explorar Destinos
-                  </a>
-                  <a href="#contacto" class="hero-btn btn-secondary">
-                      <span>📞</span>
-                      Contactanos
-                  </a>
-              </div>
+            <div class="floating-elements">
+              <div class="floating-element">🌎</div>
+              <div class="floating-element">🏔️</div>
+              <div class="floating-element">🏖️</div>
+              <div class="floating-element">🌟</div>
+            </div>
+
+            <div class="airplane-container">
+              <div class="airplane">✈️</div>
+            </div>
+            <h1 class="hero-title">Descubrí Argentina</h1>
+            <p class="hero-subtitle">Tu aventura comienza aquí</p>
+            <p class="hero-description">
+              En VIALUME somos especialistas en crear experiencias únicas e
+              inolvidables por toda Argentina. Desde las majestuosas cataratas
+              del Iguazú hasta los glaciares de la Patagonia, desde los viñedos
+              de Mendoza hasta las coloridas quebradas del Norte. Planificamos
+              cada detalle de tu viaje para que solo te preocupes por disfrutar
+              y crear recuerdos que durarán toda la vida.
+            </p>
+            <div class="hero-buttons">
+              <a href="#destinos" class="hero-btn btn-primary">
+                <span>🗺️</span>
+                Explorar Destinos
+              </a>
+              <a href="#contacto" class="hero-btn btn-secondary">
+                <span>📞</span>
+                Contactanos
+              </a>
+            </div>
           </div>
-      </section>
+        </section>
       </header>
       <section class="provinces-section">
         <h2 class="section-title">Descubrí Argentina</h2>
@@ -120,6 +122,270 @@
               <a href="#" class="explore-btn">Explorar</a>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contacto">
+        <h2 class="section-title">Planifica tu Viaje</h2>
+        <p class="section-subtitle">
+          Contanos sobre tu viaje ideal y nosotros nos encargamos del resto
+        </p>
+
+        <div class="contact-container">
+          <form class="contact-form" action="#" method="POST">
+            <fieldset class="personal-info">
+              <legend>Información Personal</legend>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre Completo *</label>
+                  <input type="text" id="nombre" name="nombre" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefono">Teléfono</label>
+                  <input type="tel" id="telefono" name="telefono" />
+                </div>
+
+                <div class="form-group">
+                  <label for="edad">Edad</label>
+                  <input
+                    type="number"
+                    id="edad"
+                    name="edad"
+                    min="18"
+                    max="100"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="trip-details">
+              <legend>Detalles del Viaje</legend>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="destinos"
+                    >Destinos que te interesan (selección múltiple) *</label
+                  >
+                  <select
+                    id="destinos"
+                    name="destinos[]"
+                    multiple
+                    required
+                    size="6"
+                  >
+                    <option value="buenos-aires">Buenos Aires</option>
+                    <option value="mendoza">Mendoza</option>
+                    <option value="bariloche">Bariloche</option>
+                    <option value="salta">Salta</option>
+                    <option value="iguazu">Cataratas del Iguazú</option>
+                    <option value="ushuaia">Ushuaia - Tierra del Fuego</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="rosario">Rosario</option>
+                    <option value="calafate">El Calafate</option>
+                    <option value="peninsula-valdes">Península Valdés</option>
+                  </select>
+                  <small
+                    >Mantén presionado Ctrl (o Cmd en Mac) para seleccionar
+                    múltiples opciones</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="tipo-viaje">Tipo de Viaje</label>
+                  <select id="tipo-viaje" name="tipo-viaje">
+                    <option value="">Selecciona una opción</option>
+                    <option value="aventura">Aventura y Naturaleza</option>
+                    <option value="cultural">Cultural y Histórico</option>
+                    <option value="gastronomico">Gastronómico</option>
+                    <option value="romantico">Romántico</option>
+                    <option value="familiar">Familiar</option>
+                    <option value="lujo">Lujo y Relax</option>
+                    <option value="mochilero">Mochilero</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fecha-inicio">Fecha de Inicio</label>
+                  <input type="date" id="fecha-inicio" name="fecha-inicio" />
+                </div>
+
+                <div class="form-group">
+                  <label for="duracion">Duración del Viaje</label>
+                  <input
+                    type="range"
+                    id="duracion"
+                    name="duracion"
+                    min="3"
+                    max="30"
+                    value="7"
+                    oninput="document.getElementById('duracion-value').textContent = this.value"
+                  />
+                  <output id="duracion-value">7</output> días
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="presupuesto">Presupuesto Aproximado (USD)</label>
+                  <select id="presupuesto" name="presupuesto">
+                    <option value="">Selecciona tu presupuesto</option>
+                    <option value="500-1000">$500 - $1,000</option>
+                    <option value="1000-2500">$1,000 - $2,500</option>
+                    <option value="2500-5000">$2,500 - $5,000</option>
+                    <option value="5000-10000">$5,000 - $10,000</option>
+                    <option value="10000+">Más de $10,000</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="viajeros">Número de Viajeros</label>
+                  <input
+                    type="number"
+                    id="viajeros"
+                    name="viajeros"
+                    min="1"
+                    max="20"
+                    value="2"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="preferences">
+              <legend>Preferencias y Actividades</legend>
+
+              <div class="form-group">
+                <label
+                  >Actividades de Interés (selecciona todas las que te
+                  gusten):</label
+                >
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="actividades[]"
+                      value="trekking"
+                    />
+                    <span class="checkmark"></span>
+                    Trekking y Senderismo
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="actividades[]"
+                      value="gastronomia"
+                    />
+                    <span class="checkmark"></span>
+                    Tours Gastronómicos
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="actividades[]" value="vinos" />
+                    <span class="checkmark"></span>
+                    Degustación de Vinos
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="actividades[]" value="tango" />
+                    <span class="checkmark"></span>
+                    Experiencias de Tango
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="actividades[]"
+                      value="deportes"
+                    />
+                    <span class="checkmark"></span>
+                    Deportes de Aventura
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="actividades[]"
+                      value="wildlife"
+                    />
+                    <span class="checkmark"></span>
+                    Observación de Fauna
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Tipo de Alojamiento Preferido:</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="alojamiento" value="hotel-lujo" />
+                    <span class="radio-mark"></span>
+                    Hoteles de Lujo
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="alojamiento" value="boutique" />
+                    <span class="radio-mark"></span>
+                    Hoteles Boutique
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="alojamiento" value="eco-lodge" />
+                    <span class="radio-mark"></span>
+                    Eco-lodges
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="alojamiento" value="hostales" />
+                    <span class="radio-mark"></span>
+                    Hostales y B&B
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="additional-info">
+              <legend>Información Adicional</legend>
+
+              <div class="form-group">
+                <label for="comentarios">Comentarios Adicionales</label>
+                <textarea
+                  id="comentarios"
+                  name="comentarios"
+                  rows="4"
+                  placeholder="Contanos sobre tus expectativas, necesidades especiales, o cualquier detalle que consideres importante para tu viaje..."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="newsletter" value="si" />
+                  <span class="checkmark"></span>
+                  Quiero recibir ofertas especiales y novedades por email
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="terminos"
+                    value="acepto"
+                    required
+                  />
+                  <span class="checkmark"></span>
+                  Acepto los términos y condiciones de servicio *
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="reset" class="btn-reset">Limpiar Formulario</button>
+              <button type="submit" class="btn-submit">Enviar Consulta</button>
+            </div>
+          </form>
         </div>
       </section>
     </div>
