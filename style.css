@@ -1498,6 +1498,310 @@ legend {
   box-shadow: 0 12px 35px rgba(0, 191, 166, 0.4);
 }
 
+/*Footer section*/
+.footer-section {
+  padding: 80px 70px 40px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2e2e2e 100%);
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid rgba(0, 191, 166, 0.3);
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(0, 191, 166, 0.08) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 70%,
+      rgba(255, 180, 0, 0.08) 0%,
+      transparent 50%
+    );
+  animation: footerGlow 12s ease-in-out infinite;
+}
+
+@keyframes footerGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 50px 40px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 4px;
+  height: calc(100% + 4px);
+  background: linear-gradient(
+    180deg,
+    var(--main-blue),
+    var(--main-yellow),
+    #ffffff
+  );
+  border-radius: 2px;
+  animation: footerBorderGlow 8s ease-in-out infinite;
+}
+
+.footer-content::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: calc(100% + 4px);
+  height: 4px;
+  background: linear-gradient(
+    270deg,
+    var(--main-blue),
+    var(--main-yellow),
+    #ffffff
+  );
+  border-radius: 2px;
+  animation: footerBorderGlow 8s ease-in-out infinite 2s;
+}
+
+@keyframes footerBorderGlow {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+.footer-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    var(--main-blue),
+    var(--main-yellow)
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: footerTitleShine 4s ease-in-out infinite;
+}
+
+.footer-title::before {
+  content: "🎓";
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  animation: graduationFloat 3s ease-in-out infinite;
+}
+
+.footer-title::after {
+  content: "📚";
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  animation: bookFloat 3s ease-in-out infinite 1s;
+}
+
+@keyframes footerTitleShine {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes graduationFloat {
+  0%,
+  100% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50%) rotate(10deg);
+  }
+}
+
+@keyframes bookFloat {
+  0%,
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.1);
+  }
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.info-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 25px 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 191, 166, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.info-item:hover::before {
+  left: 100%;
+}
+
+.info-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 191, 166, 0.2);
+}
+
+.info-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--main-blue);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.footer-year {
+  font-size: 1.2rem;
+  color: var(--main-yellow);
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 15px 25px;
+  background: rgba(255, 180, 0, 0.1);
+  border: 2px solid rgba(255, 180, 0, 0.3);
+  border-radius: 15px;
+  display: inline-block;
+  position: relative;
+  animation: yearPulse 2s ease-in-out infinite;
+}
+
+.footer-year::before {
+  content: "✨";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  animation: sparkleRotate 4s linear infinite;
+}
+
+.footer-year::after {
+  content: "✨";
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  animation: sparkleRotate 4s linear infinite 2s;
+}
+
+@keyframes yearPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 180, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 180, 0, 0.6);
+  }
+}
+
+@keyframes sparkleRotate {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+/* Responsive para el Footer */
+@media (max-width: 768px) {
+  .footer-info {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-title {
+    font-size: 2rem;
+  }
+
+  .footer-title::before,
+  .footer-title::after {
+    display: none;
+  }
+
+  .footer-section {
+    padding: 60px 30px 30px;
+  }
+}
+
 /*Sección Argentina*/
 
 .argentina-section {
