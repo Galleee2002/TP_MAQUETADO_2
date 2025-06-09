@@ -51,26 +51,6 @@ body {
   overflow: hidden;
 }
 
-.main-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(
-      circle at 30% 20%,
-      rgba(255, 180, 0, 0.3) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 70% 80%,
-      rgba(0, 191, 166, 0.3) 0%,
-      transparent 50%
-    );
-  animation: floatingBg 20s ease-in-out infinite;
-}
-
 @keyframes floatingBg {
   0%,
   100% {
@@ -317,6 +297,7 @@ body {
   font-size: 4.5rem;
   font-weight: 900;
   margin-bottom: 30px;
+  padding: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
@@ -884,7 +865,7 @@ body {
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 40px;
+  gap: 50px;
   padding: 0 20px;
 }
 
@@ -1187,7 +1168,7 @@ body {
 
 .contact-section .section-title {
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .contact-section .section-title::before {
