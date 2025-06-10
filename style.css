@@ -1532,13 +1532,14 @@ legend {
   position: relative;
   z-index: 2;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .footer-content::before {
   content: "";
   position: absolute;
   top: -2px;
-  left: -2px;
+  left: 0;
   width: 4px;
   height: calc(100% + 4px);
   background: linear-gradient(
@@ -1554,7 +1555,7 @@ legend {
 .footer-content::after {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: 0;
   right: -2px;
   width: calc(100% + 4px);
   height: 4px;
