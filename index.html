@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agencia de turismo</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <div class="main-container">
       <header class="main-header">
         <nav class="main-nav">
           <div class="logo-container">
-            <h1 class="logo"></h1>
+            <svg width="50" height="50" fill="white" viewBox="0 0 24 24" transform="" id="injected-svg"><!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free--><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2M4 12c0-.9.16-1.76.43-2.57L6 11l2 2v2l2 2 1 1v1.93c-3.94-.49-7-3.86-7-7.93m14.33 4.87c-.65-.53-1.64-.87-2.33-.87v-1c0-1.1-.9-2-2-2h-4v-3c1.1 0 2-.9 2-2V7h1c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 1.83-.63 3.52-1.67 4.87"></path></svg>
             <h2 class="site-title">VIALUME</h2>
           </div>
           <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="Secciones/actividades.html">ACTIVIDADES</a></li>
-            <li><a href="Secciones/argentina.html">SOBRE ARGENTINA</a></li>
-            <li><a href="Secciones/tuviaje.html">PLANEÁ TU VIAJE</a></li>
-            <li><a href="gracias.html"></a></li>
+            <li><a href="index.html"><i class='bx bx-home'></i> INICIO</a></li>
+            <li><a href="Secciones/actividades.html"><i class='bx bx-run'></i> ACTIVIDADES</a></li>
+            <li><a href="Secciones/argentina.html"><i class='bx bx-map'></i> SOBRE ARGENTINA</a></li>
+            <li><a href="Secciones/tuviaje.html"><i class='bx bx-calendar-check'></i> PLANEÁ TU VIAJE</a></li>
           </ul>
         </nav>
       </header>
+      
       <section class="provinces-section">
-        <h2 class="section-title">Descubrí Argentina</h2>
+        <h2 class="section-title">
+          <i class='bx bx-world section-icon'></i>
+          Descubrí Argentina
+        </h2>
         <p class="section-subtitle">
           Explorá los destinos más fascinantes de nuestro hermoso país
         </p>
@@ -33,66 +39,106 @@
           <div class="province-card">
             <div class="card-image card-buenos-aires"></div>
             <div class="card-content">
-              <h3 class="province-name">Buenos Aires</h3>
-              <p class="province-location">Capital Federal</p>
+              <h3 class="province-name">
+                <i class='bx bx-buildings'></i>
+                Buenos Aires
+              </h3>
+              <p class="province-location">
+                <i class='bx bx-map-pin'></i>
+                Capital Federal
+              </p>
               <p class="province-description">
                 La vibrante capital argentina te espera con su rica historia,
                 arquitectura europea, tango apasionado y una gastronomía
                 incomparable. Desde los coloridos barrios de La Boca y San Telmo
                 hasta la elegancia de Recoleta y Palermo.
               </p>
-              <a href="#" class="explore-btn">Explorar</a>
+              <a href="#" class="explore-btn">
+                <i class='bx bx-search-alt-2'></i>
+                Explorar
+              </a>
             </div>
           </div>
 
           <div class="province-card reverse">
             <div class="card-image card-mendoza"></div>
             <div class="card-content">
-              <h3 class="province-name">Mendoza</h3>
-              <p class="province-location">Región de Cuyo</p>
+              <h3 class="province-name">
+                <i class='bx bx-wine'></i>
+                Mendoza
+              </h3>
+              <p class="province-location">
+                <i class='bx bx-map-pin'></i>
+                Región de Cuyo
+              </p>
               <p class="province-description">
                 Tierra de vinos excepcionales y paisajes cordilleranos únicos.
                 Descubrí las bodegas más prestigiosas, disfrutá de la majestuosa
                 Cordillera de los Andes y viví experiencias únicas entre viñedos
                 y montañas nevadas.
               </p>
-              <a href="#" class="explore-btn">Explorar</a>
+              <a href="#" class="explore-btn">
+                <i class='bx bx-search-alt-2'></i>
+                Explorar
+              </a>
             </div>
           </div>
 
           <div class="province-card">
             <div class="card-image card-bariloche"></div>
             <div class="card-content">
-              <h3 class="province-name">Bariloche</h3>
-              <p class="province-location">Río Negro - Patagonia</p>
+              <h3 class="province-name">
+                <i class='bx bx-landscape'></i>
+                Bariloche
+              </h3>
+              <p class="province-location">
+                <i class='bx bx-map-pin'></i>
+                Río Negro - Patagonia
+              </p>
               <p class="province-description">
                 El corazón de la Patagonia argentina te sorprenderá con sus
                 lagos cristalinos, bosques milenarios y montañas que tocan el
                 cielo. Aventura, chocolate artesanal y paisajes que quitan el
                 aliento en cada rincón.
               </p>
-              <a href="#" class="explore-btn">Explorar</a>
+              <a href="#" class="explore-btn">
+                <i class='bx bx-search-alt-2'></i>
+                Explorar
+              </a>
             </div>
           </div>
 
           <div class="province-card reverse">
             <div class="card-image card-salta"></div>
             <div class="card-content">
-              <h3 class="province-name">Salta</h3>
-              <p class="province-location">Norte Argentino</p>
+              <h3 class="province-name">
+                <i class='bx bx-mountain'></i>
+                Salta
+              </h3>
+              <p class="province-location">
+                <i class='bx bx-map-pin'></i>
+                Norte Argentino
+              </p>
               <p class="province-description">
                 La "Linda" te conquistará con su arquitectura colonial,
                 tradiciones ancestrales y paisajes únicos. Desde la Quebrada de
                 Humahuaca hasta los valles Calchaquíes, cada rincón cuenta una
                 historia milenaria.
               </p>
-              <a href="#" class="explore-btn">Explorar</a>
+              <a href="#" class="explore-btn">
+                <i class='bx bx-search-alt-2'></i>
+                Explorar
+              </a>
             </div>
           </div>
         </div>
       </section>
+      
       <section class="contact-section" id="contacto">
-        <h2 class="section-title">Planifica tu Viaje</h2>
+        <h2 class="section-title">
+          <i class='bx bx-calendar-plus section-icon'></i>
+          Planifica tu Viaje
+        </h2>
         <p class="section-subtitle">
           Contanos sobre tu viaje ideal y nosotros nos encargamos del resto
         </p>
@@ -100,28 +146,43 @@
         <div class="contact-container">
           <form class="contact-form" action="gracias.html" method="GET">
             <fieldset class="personal-info">
-              <legend>Información Personal</legend>
+              <legend>
+                <i class='bx bx-user'></i>
+                Información Personal
+              </legend>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="nombre">Nombre Completo *</label>
+                  <label for="nombre">
+                    <i class='bx bx-user-circle'></i>
+                    Nombre Completo *
+                  </label>
                   <input type="text" id="nombre" name="nombre" required />
                 </div>
 
                 <div class="form-group">
-                  <label for="email">Email *</label>
+                  <label for="email">
+                    <i class='bx bx-envelope'></i>
+                    Email *
+                  </label>
                   <input type="email" id="email" name="email" required />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="telefono">Teléfono</label>
+                  <label for="telefono">
+                    <i class='bx bx-phone'></i>
+                    Teléfono
+                  </label>
                   <input type="tel" id="telefono" name="telefono" />
                 </div>
 
                 <div class="form-group">
-                  <label for="edad">Edad</label>
+                  <label for="edad">
+                    <i class='bx bx-calendar'></i>
+                    Edad
+                  </label>
                   <input
                     type="number"
                     id="edad"
@@ -134,13 +195,17 @@
             </fieldset>
 
             <fieldset class="trip-details">
-              <legend>Detalles del Viaje</legend>
+              <legend>
+                <i class='bx bx-trip'></i>
+                Detalles del Viaje
+              </legend>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="destinos"
-                    >Destinos que te interesan (selección múltiple) *</label
-                  >
+                  <label for="destinos">
+                    <i class='bx bx-map-alt'></i>
+                    Destinos que te interesan (selección múltiple) *
+                  </label>
                   <select
                     id="destinos"
                     name="destinos[]"
@@ -159,14 +224,17 @@
                     <option value="calafate">El Calafate</option>
                     <option value="peninsula-valdes">Península Valdés</option>
                   </select>
-                  <small
-                    >Mantén presionado Ctrl (o Cmd en Mac) para seleccionar
-                    múltiples opciones</small
-                  >
+                  <small>
+                    <i class='bx bx-info-circle'></i>
+                    Mantén presionado Ctrl (o Cmd en Mac) para seleccionar múltiples opciones
+                  </small>
                 </div>
 
                 <div class="form-group">
-                  <label for="tipo-viaje">Tipo de Viaje</label>
+                  <label for="tipo-viaje">
+                    <i class='bx bx-category'></i>
+                    Tipo de Viaje
+                  </label>
                   <select id="tipo-viaje" name="tipo-viaje">
                     <option value="">Selecciona una opción</option>
                     <option value="aventura">Aventura y Naturaleza</option>
@@ -182,12 +250,18 @@
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="fecha-inicio">Fecha de Inicio</label>
+                  <label for="fecha-inicio">
+                    <i class='bx bx-calendar-event'></i>
+                    Fecha de Inicio
+                  </label>
                   <input type="date" id="fecha-inicio" name="fecha-inicio" />
                 </div>
 
                 <div class="form-group">
-                  <label for="duracion">Duración del Viaje</label>
+                  <label for="duracion">
+                    <i class='bx bx-time'></i>
+                    Duración del Viaje
+                  </label>
                   <input
                     type="range"
                     id="duracion"
@@ -203,7 +277,10 @@
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="presupuesto">Presupuesto Aproximado (USD)</label>
+                  <label for="presupuesto">
+                    <i class='bx bx-dollar-circle'></i>
+                    Presupuesto Aproximado (USD)
+                  </label>
                   <select id="presupuesto" name="presupuesto">
                     <option value="">Selecciona tu presupuesto</option>
                     <option value="500-1000">$500 - $1,000</option>
@@ -215,7 +292,10 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="viajeros">Número de Viajeros</label>
+                  <label for="viajeros">
+                    <i class='bx bx-group'></i>
+                    Número de Viajeros
+                  </label>
                   <input
                     type="number"
                     id="viajeros"
@@ -229,13 +309,16 @@
             </fieldset>
 
             <fieldset class="preferences">
-              <legend>Preferencias y Actividades</legend>
+              <legend>
+                <i class='bx bx-heart'></i>
+                Preferencias y Actividades
+              </legend>
 
               <div class="form-group">
-                <label
-                  >Actividades de Interés (selecciona todas las que te
-                  gusten):</label
-                >
+                <label>
+                  <i class='bx bx-list-check'></i>
+                  Actividades de Interés (selecciona todas las que te gusten):
+                </label>
                 <div class="checkbox-group">
                   <label class="checkbox-label">
                     <input
@@ -244,6 +327,7 @@
                       value="trekking"
                     />
                     <span class="checkmark"></span>
+                    <i class='bx bx-walk'></i>
                     Trekking y Senderismo
                   </label>
                   <label class="checkbox-label">
@@ -253,16 +337,19 @@
                       value="gastronomia"
                     />
                     <span class="checkmark"></span>
+                    <i class='bx bx-restaurant'></i>
                     Tours Gastronómicos
                   </label>
                   <label class="checkbox-label">
                     <input type="checkbox" name="actividades[]" value="vinos" />
                     <span class="checkmark"></span>
+                    <i class='bx bx-wine'></i>
                     Degustación de Vinos
                   </label>
                   <label class="checkbox-label">
                     <input type="checkbox" name="actividades[]" value="tango" />
                     <span class="checkmark"></span>
+                    <i class='bx bx-music'></i>
                     Experiencias de Tango
                   </label>
                   <label class="checkbox-label">
@@ -272,6 +359,7 @@
                       value="deportes"
                     />
                     <span class="checkmark"></span>
+                    <i class='bx bx-cycling'></i>
                     Deportes de Aventura
                   </label>
                   <label class="checkbox-label">
@@ -281,32 +369,40 @@
                       value="wildlife"
                     />
                     <span class="checkmark"></span>
+                    <i class='bx bx-bug'></i>
                     Observación de Fauna
                   </label>
                 </div>
               </div>
 
               <div class="form-group">
-                <label>Tipo de Alojamiento Preferido:</label>
+                <label>
+                  <i class='bx bx-bed'></i>
+                  Tipo de Alojamiento Preferido:
+                </label>
                 <div class="radio-group">
                   <label class="radio-label">
                     <input type="radio" name="alojamiento" value="hotel-lujo" />
                     <span class="radio-mark"></span>
+                    <i class='bx bx-crown'></i>
                     Hoteles de Lujo
                   </label>
                   <label class="radio-label">
                     <input type="radio" name="alojamiento" value="boutique" />
                     <span class="radio-mark"></span>
+                    <i class='bx bx-home-heart'></i>
                     Hoteles Boutique
                   </label>
                   <label class="radio-label">
                     <input type="radio" name="alojamiento" value="eco-lodge" />
                     <span class="radio-mark"></span>
+                    <i class='bx bx-leaf'></i>
                     Eco-lodges
                   </label>
                   <label class="radio-label">
                     <input type="radio" name="alojamiento" value="hostales" />
                     <span class="radio-mark"></span>
+                    <i class='bx bx-building-house'></i>
                     Hostales y B&B
                   </label>
                 </div>
@@ -314,10 +410,16 @@
             </fieldset>
 
             <fieldset class="additional-info">
-              <legend>Información Adicional</legend>
+              <legend>
+                <i class='bx bx-info-square'></i>
+                Información Adicional
+              </legend>
 
               <div class="form-group">
-                <label for="comentarios">Comentarios Adicionales</label>
+                <label for="comentarios">
+                  <i class='bx bx-message-detail'></i>
+                  Comentarios Adicionales
+                </label>
                 <textarea
                   id="comentarios"
                   name="comentarios"
@@ -330,6 +432,7 @@
                 <label class="checkbox-label">
                   <input type="checkbox" name="newsletter" value="si" />
                   <span class="checkmark"></span>
+                  <i class='bx bx-mail-send'></i>
                   Quiero recibir ofertas especiales y novedades por email
                 </label>
               </div>
@@ -343,14 +446,21 @@
                     required
                   />
                   <span class="checkmark"></span>
+                  <i class='bx bx-check-shield'></i>
                   Acepto los términos y condiciones de servicio *
                 </label>
               </div>
             </fieldset>
 
             <div class="form-actions">
-              <button type="reset" class="btn-reset">Limpiar Formulario</button>
-              <button type="submit" class="btn-submit">Enviar Consulta</button>
+              <button type="reset" class="btn-reset">
+                <i class='bx bx-refresh'></i>
+                Limpiar Formulario
+              </button>
+              <button type="submit" class="btn-submit">
+                <i class='bx bx-send'></i>
+                Enviar Consulta
+              </button>
             </div>
           </form>
         </div>
@@ -358,35 +468,49 @@
 
       <footer class="footer-section">
         <div class="footer-content">
-          <h2 class="footer-title">Información Académica</h2>
+          <h2 class="footer-title">
+            <i class='bx bx-graduation'></i>
+            Información Académica
+          </h2>
 
           <div class="footer-info">
             <div class="info-item">
-              <div class="info-label">Estudiante</div>
+              <div class="info-label">
+                <i class='bx bx-user-circle'></i>
+                Estudiante
+              </div>
               <div class="info-value">Gael García Núñez</div>
             </div>
 
             <div class="info-item">
-              <div class="info-label">Materia</div>
+              <div class="info-label">
+                <i class='bx bx-book-content'></i>
+                Materia
+              </div>
               <div class="info-value">Maquetado y Desarrollo Web</div>
             </div>
 
             <div class="info-item">
-              <div class="info-label">Docente a Cargo</div>
+              <div class="info-label">
+                <i class='bx bx-chalkboard'></i>
+                Docente a Cargo
+              </div>
               <div class="info-value">Carlos Ferrer</div>
             </div>
 
             <div class="info-item">
-              <div class="info-label">Institución</div>
+              <div class="info-label">
+                <i class='bx bx-buildings'></i>
+                Institución
+              </div>
               <div class="info-value">Escuela Da Vinci</div>
             </div>
           </div>
 
           <div class="footer-year">
+            <i class='bx bx-calendar-star'></i>
             Trabajo Práctico - Primer Cuatrimestre 2025
           </div>
         </div>
       </footer>
     </div>
-  </body>
-</html>

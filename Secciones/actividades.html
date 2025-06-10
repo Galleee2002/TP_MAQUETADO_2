@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Activiades</title>
     <link rel="stylesheet" href="../style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <div class="main-container">
       <header class="main-header">
-        <nav class="main-nav">
+        <nav class="main-nav">s
           <div class="logo-container">
-            <h1 class="logo"></h1>
+            <svg width="50" height="50" fill="white" viewBox="0 0 24 24" transform="" id="injected-svg"><!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free--><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2M4 12c0-.9.16-1.76.43-2.57L6 11l2 2v2l2 2 1 1v1.93c-3.94-.49-7-3.86-7-7.93m14.33 4.87c-.65-.53-1.64-.87-2.33-.87v-1c0-1.1-.9-2-2-2h-4v-3c1.1 0 2-.9 2-2V7h1c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 1.83-.63 3.52-1.67 4.87"></path></svg>
             <h2 class="site-title">VIALUME</h2>
           </div>
           <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="actividades.html">ACTIVIDADES</a></li>
-            <li><a href="argentina.html">SOBRE ARGENTINA</a></li>
-            <li><a href="tuviaje.html">PLANEÁ TU VIAJE</a></li>
+            <li><a href="../index.html"><i class='bx bx-home'></i> INICIO</a></li>
+            <li><a href="actividades.html"><i class='bx bx-run'></i> ACTIVIDADES</a></li>
+            <li><a href="argentina.html"><i class='bx bx-map'></i> SOBRE ARGENTINA</a></li>
+            <li><a href="tuviaje.html"><i class='bx bx-calendar-check'></i> PLANEÁ TU VIAJE</a></li>
           </ul>
         </nav>
       </header>
       <section class="activities-section">
-        <h2 class="section-title">Nuestras Actividades</h2>
+        <h2 class="section-title">
+          <i class='bx bx-star section-icon'></i>
+          Nuestras Actividades
+        </h2>
         <p class="section-subtitle">
           Descubrí todo lo que tenemos preparado para hacer de tu viaje una
           experiencia inolvidable
@@ -31,80 +35,112 @@
 
         <div class="activities-container">
           <div class="activity-card">
-            <div class="activity-icon">🏥</div>
-            <h3 class="activity-title">Salud & Bienestar</h3>
+            <div class="activity-icon">
+              <i class='bx bx-plus-medical'></i>
+            </div>
+            <h3 class="activity-title">
+              <i class='bx bx-health'></i>
+              Salud & Bienestar
+            </h3>
             <p class="activity-description">
               Tu salud es nuestra prioridad. Ofrecemos información completa
               sobre cuidados médicos, seguros de viaje y recomendaciones
               sanitarias para que disfrutes tu aventura con total tranquilidad.
             </p>
             <ul class="info-list">
-              <li>Asesoramiento sobre vacunas necesarias según destino</li>
-              <li>Seguros médicos internacionales con cobertura completa</li>
-              <li>Botiquín de viaje personalizado y recomendaciones</li>
-              <li>Contactos de centros médicos en cada destino</li>
-              <li>Información sobre farmacias y servicios de emergencia</li>
-              <li>Guías de alimentación segura y agua potable</li>
+              <li><i class='bx bx-injection'></i> Asesoramiento sobre vacunas necesarias según destino</li>
+              <li><i class='bx bx-shield-check'></i> Seguros médicos internacionales con cobertura completa</li>
+              <li><i class='bx bx-first-aid'></i> Botiquín de viaje personalizado y recomendaciones</li>
+              <li><i class='bx bx-clinic'></i> Contactos de centros médicos en cada destino</li>
+              <li><i class='bx bx-store'></i> Información sobre farmacias y servicios de emergencia</li>
+              <li><i class='bx bx-restaurant'></i> Guías de alimentación segura y agua potable</li>
             </ul>
             <div class="highlight-box">
+              <i class='bx bx-bulb'></i>
               <strong>Tip de Viajero:</strong> Consultá con nuestro equipo
               médico especializado al menos 30 días antes de tu viaje para
               preparar todo lo necesario.
             </div>
-            <a href="#" class="activity-btn">Consultar Información de Salud</a>
+            <a href="#" class="activity-btn">
+              <i class='bx bx-search-alt'></i>
+              Consultar Información de Salud
+            </a>
           </div>
 
           <div class="activity-card">
-            <div class="activity-icon">✈️</div>
-            <h3 class="activity-title">Planificación de Viajes</h3>
+            <div class="activity-icon">
+              <i class='bx  bx-paper-plane'  ></i> 
+                        </div>
+            <h3 class="activity-title">
+              <i class='bx bx-calendar-event'></i>
+              Planificación de Viajes
+            </h3>
             <p class="activity-description">
               Organizamos cada detalle de tu viaje para que solo te preocupes
               por disfrutar. Desde vuelos hasta alojamientos, todo está
               cuidadosamente planificado para tu comodidad.
             </p>
             <ul class="info-list">
-              <li>Reserva de vuelos nacionales e internacionales</li>
-              <li>Selección de hoteles y alojamientos únicos</li>
-              <li>Traslados privados y transporte especializado</li>
-              <li>Itinerarios personalizados según tus intereses</li>
-              <li>Gestión de documentación y visas</li>
-              <li>Asistencia 24/7 durante todo el viaje</li>
+              <li><i class='bx bx-plane'></i> Reserva de vuelos nacionales e internacionales</li>
+              <li><i class='bx bx-bed'></i> Selección de hoteles y alojamientos únicos</li>
+              <li><i class='bx bx-car'></i> Traslados privados y transporte especializado</li>
+              <li><i class='bx bx-map-pin'></i> Itinerarios personalizados según tus intereses</li>
+              <li><i class='bx bx-id-card'></i> Gestión de documentación y visas</li>
+              <li><i class='bx bx-support'></i> Asistencia 24/7 durante todo el viaje</li>
             </ul>
             <div class="highlight-box">
+              <i class='bx bx-crown'></i>
               <strong>Servicio Exclusivo:</strong> Nuestros travel managers
               están disponibles las 24 horas para asistirte en cualquier
               imprevisto durante tu viaje.
             </div>
-            <a href="#" class="activity-btn">Planificar Mi Viaje</a>
+            <a href="#" class="activity-btn">
+              <i class='bx bx-edit'></i>
+              Planificar Mi Viaje
+            </a>
           </div>
 
           <div class="activity-card">
-            <div class="activity-icon">🗺️</div>
-            <h3 class="activity-title">Recorridos & Excursiones</h3>
+            <div class="activity-icon">
+              <i class='bx bx-map-alt'></i>
+            </div>
+            <h3 class="activity-title">
+              <i class='bx bx-walk'></i>
+              Recorridos & Excursiones
+            </h3>
             <p class="activity-description">
               Descubrí Argentina a través de nuestros recorridos especializados.
               Cada excursión está diseñada para mostrarte lo mejor de cada
               destino con guías expertos locales.
             </p>
             <ul class="info-list">
-              <li>City tours en Buenos Aires, Mendoza, Bariloche y Salta</li>
-              <li>Excursiones a Cataratas del Iguazú con guía bilingüe</li>
-              <li>Tours gastronómicos y catas de vino en Mendoza</li>
-              <li>Trekking y aventura en la Patagonia</li>
-              <li>Recorridos culturales por el Norte Argentino</li>
-              <li>Experiencias fotográficas en paisajes únicos</li>
+              <li><i class='bx bx-building'></i> City tours en Buenos Aires, Mendoza, Bariloche y Salta</li>
+              <li><i class='bx bx-landscape'></i> Excursiones a Cataratas del Iguazú con guía bilingüe</li>
+              <li><i class='bx bx-wine'></i> Tours gastronómicos y catas de vino en Mendoza</li>
+              <li><i class='bx bx-mountain'></i> Trekking y aventura en la Patagonia</li>
+              <li><i class='bx bx-palette'></i> Recorridos culturales por el Norte Argentino</li>
+              <li><i class='bx bx-camera'></i> Experiencias fotográficas en paisajes únicos</li>
             </ul>
             <div class="highlight-box">
+              <i class='bx bx-diamond'></i>
               <strong>Experiencia Premium:</strong> Todos nuestros recorridos
               incluyen guías certificados, transporte de primera clase y acceso
               exclusivo a sitios especiales.
             </div>
-            <a href="#" class="activity-btn">Ver Todos los Recorridos</a>
+            <a href="#" class="activity-btn">
+              <i class='bx bx-show-alt'></i>
+              Ver Todos los Recorridos
+            </a>
           </div>
 
           <div class="activity-card special-card">
-            <div class="activity-icon">🎁</div>
-            <h3 class="activity-title">Paquetes Integrales VIALUME</h3>
+            <div class="activity-icon">
+              <i class='bx bx-gift'></i>
+            </div>
+            <h3 class="activity-title">
+              <i class='bx bx-package'></i>
+              Paquetes Integrales VIALUME
+            </h3>
             <p class="activity-description">
               Combinamos salud, planificación y recorridos en paquetes únicos
               que incluyen todo lo necesario para una experiencia de viaje
@@ -112,62 +148,69 @@
               diferentes tipos de viajeros y presupuestos.
             </p>
             <ul class="info-list">
-              <li>
-                Paquete "Aventurero": Patagonia completa con seguros y guías
-                especializados
-              </li>
-              <li>
-                Paquete "Cultural": Norte Argentino con experiencias auténticas
-              </li>
-              <li>
-                Paquete "Gourmet": Ruta del vino en Mendoza con degustaciones
-                exclusivas
-              </li>
-              <li>
-                Paquete "Urbano": Buenos Aires completo con shows y gastronomía
-              </li>
-              <li>
-                Paquete "Familiar": Actividades para todas las edades con
-                seguridad total
-              </li>
-              <li>Paquete "Romántico": Escapadas especiales para parejas</li>
+              <li><i class='bx bx-cycling'></i> Paquete "Aventurero": Patagonia completa con seguros y guías especializados</li>
+              <li><i class='bx bx-book-open'></i> Paquete "Cultural": Norte Argentino con experiencias auténticas</li>
+              <li><i class='bx bx-restaurant'></i> Paquete "Gourmet": Ruta del vino en Mendoza con degustaciones exclusivas</li>
+              <li><i class='bx bx-buildings'></i> Paquete "Urbano": Buenos Aires completo con shows y gastronomía</li>
+              <li><i class='bx bx-group'></i> Paquete "Familiar": Actividades para todas las edades con seguridad total</li>
+              <li><i class='bx bx-heart'></i> Paquete "Romántico": Escapadas especiales para parejas</li>
             </ul>
             <div class="highlight-box">
+              <i class='bx bx-star'></i>
               <strong>Ventaja Especial:</strong> Los paquetes integrales
               incluyen descuentos de hasta 25% comparado con servicios
               individuales, más beneficios exclusivos y upgrades sin costo.
             </div>
-            <a href="#" class="activity-btn">Descubrir Paquetes Especiales</a>
+            <a href="#" class="activity-btn">
+              <i class='bx bx-search-alt-2'></i>
+              Descubrir Paquetes Especiales
+            </a>
           </div>
         </div>
       </section>
       <footer class="footer-section">
         <div class="footer-content">
-          <h2 class="footer-title">Información Académica</h2>
+          <h2 class="footer-title">
+            <i class='bx bx-graduation'></i>
+            Información Académica
+          </h2>
 
           <div class="footer-info">
             <div class="info-item">
-              <div class="info-label">Estudiante</div>
+              <div class="info-label">
+                <i class='bx bx-user-circle'></i>
+                Estudiante
+              </div>
               <div class="info-value">Gael García Núñez</div>
             </div>
 
             <div class="info-item">
-              <div class="info-label">Materia</div>
+              <div class="info-label">
+                <i class='bx bx-book-content'></i>
+                Materia
+              </div>
               <div class="info-value">Maquetado y Desarrollo Web</div>
             </div>
 
             <div class="info-item">
-              <div class="info-label">Docente a Cargo</div>
+              <div class="info-label">
+                <i class='bx bx-chalkboard'></i>
+                Docente a Cargo
+              </div>
               <div class="info-value">Carlos Ferrer</div>
             </div>
 
             <div class="info-item">
-              <div class="info-label">Institución</div>
+              <div class="info-label">
+                <i class='bx bx-buildings'></i>
+                Institución
+              </div>
               <div class="info-value">Escuela Da Vinci</div>
             </div>
           </div>
 
           <div class="footer-year">
+            <i class='bx bx-calendar-star'></i>
             Trabajo Práctico - Primer Cuatrimestre 2025
           </div>
         </div>

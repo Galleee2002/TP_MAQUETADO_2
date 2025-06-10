@@ -118,6 +118,8 @@ body {
   background-position: center;
 }
 
+
+
 .logo::before {
   content: "";
   font-size: 2.5rem;
@@ -318,24 +320,6 @@ body {
   50% {
     background-position: 100% 50%;
   }
-}
-
-.section-title::before {
-  content: "✨";
-  position: absolute;
-  top: -20px;
-  left: 20%;
-  font-size: 2rem;
-  animation: sparkle 2s ease-in-out infinite;
-}
-
-.section-title::after {
-  content: "🌟";
-  position: absolute;
-  top: -10px;
-  right: 15%;
-  font-size: 1.5rem;
-  animation: sparkle 2s ease-in-out infinite 0.5s;
 }
 
 @keyframes sparkle {
@@ -1017,17 +1001,6 @@ body {
   transition: all 0.3s ease;
 }
 
-.info-list li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--main-blue);
-  font-weight: bold;
-  font-size: 1.2rem;
-  animation: checkMark 0.5s ease-out;
-}
-
 .info-list li:hover {
   padding-left: 35px;
   color: var(--main-blue);
@@ -1051,15 +1024,6 @@ body {
   font-style: italic;
   position: relative;
   padding-right: 60px;
-}
-
-.highlight-box::after {
-  content: "💡";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 1.5rem;
-  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -1170,15 +1134,6 @@ body {
   color: white;
   margin-bottom: 50px;
 }
-
-.contact-section .section-title::before {
-  content: "📝";
-}
-
-.contact-section .section-title::after {
-  content: "✈️";
-}
-
 .contact-section .section-subtitle {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 60px;
@@ -1602,26 +1557,6 @@ legend {
   animation: footerTitleShine 4s ease-in-out infinite;
 }
 
-.footer-title::before {
-  content: "🎓";
-  position: absolute;
-  left: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  animation: graduationFloat 3s ease-in-out infinite;
-}
-
-.footer-title::after {
-  content: "📚";
-  position: absolute;
-  right: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  animation: bookFloat 3s ease-in-out infinite 1s;
-}
-
 @keyframes footerTitleShine {
   0%,
   100% {
@@ -1723,26 +1658,6 @@ legend {
   display: inline-block;
   position: relative;
   animation: yearPulse 2s ease-in-out infinite;
-}
-
-.footer-year::before {
-  content: "✨";
-  position: absolute;
-  left: -30px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.5rem;
-  animation: sparkleRotate 4s linear infinite;
-}
-
-.footer-year::after {
-  content: "✨";
-  position: absolute;
-  right: -30px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.5rem;
-  animation: sparkleRotate 4s linear infinite 2s;
 }
 
 @keyframes yearPulse {
@@ -2247,17 +2162,6 @@ legend {
   letter-spacing: 2px;
   position: relative;
 }
-
-.video-section h2::before {
-  content: "📹";
-  position: absolute;
-  left: -60px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.5rem;
-  animation: videoIcon 4s ease-in-out infinite;
-}
-
 @keyframes videoIcon {
   0%,
   100% {
@@ -2599,26 +2503,6 @@ legend {
   animation: planningTitleFloat 8s ease-in-out infinite;
 }
 
-.planning-hero h1::before {
-  content: "✈️";
-  position: absolute;
-  left: -80px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 3.5rem;
-  animation: planeMove 5s ease-in-out infinite;
-}
-
-.planning-hero h1::after {
-  content: "🗺️";
-  position: absolute;
-  right: -80px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 3rem;
-  animation: mapSpin 8s ease-in-out infinite;
-}
-
 @keyframes planningTitleFloat {
   0%,
   100% {
@@ -2686,24 +2570,6 @@ legend {
   background-clip: text;
   animation: gradientShift 5s ease-in-out infinite;
   text-shadow: 0 8px 32px rgba(255, 255, 255, 0.3);
-}
-
-.steps-section-title::before {
-  content: "📝";
-  position: absolute;
-  top: -20px;
-  left: 15%;
-  font-size: 2.5rem;
-  animation: sparkle 3s ease-in-out infinite;
-}
-
-.steps-section-title::after {
-  content: "⭐";
-  position: absolute;
-  top: -10px;
-  right: 15%;
-  font-size: 2rem;
-  animation: sparkle 3s ease-in-out infinite 1s;
 }
 
 @keyframes gradientShift {
@@ -2928,26 +2794,6 @@ legend {
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
-}
-
-.services-title::before {
-  content: "🏨";
-  position: absolute;
-  left: -60px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.5rem;
-  animation: serviceIcon1 4s ease-in-out infinite;
-}
-
-.services-title::after {
-  content: "🎒";
-  position: absolute;
-  right: -60px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.5rem;
-  animation: serviceIcon2 4s ease-in-out infinite 1s;
 }
 
 @keyframes serviceIcon1 {
@@ -3385,4 +3231,245 @@ legend {
     width: 100%;
     max-width: 250px;
   }
+}
+/* Estilos para iconos de Boxicons */
+
+/* Logo y navegación */
+/* Estilos para iconos de Boxicons */
+
+/* Logo y navegación */
+.logo-icon {
+  font-size: 2rem;
+  color: var(--main-blue);
+  margin-right: 0.5rem;
+}
+
+.section-icon {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.main-nav ul li a i {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Tarjetas de provincias */
+.province-name i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.province-location i {
+  margin-right: 0.25rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.explore-btn i {
+  margin-right: 0.5rem;
+}
+
+/* Formulario */
+.form-group label i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.checkbox-label i,
+.radio-label i {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+fieldset legend i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+small i {
+  margin-right: 0.25rem;
+  color: var(--main-blue);
+}
+
+/* Botones */
+.btn-reset i,
+.btn-submit i {
+  margin-right: 0.5rem;
+}
+
+/* Footer */
+.footer-title i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.info-label i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.footer-year i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.explore-btn:hover i,
+.btn-submit:hover i,
+.btn-reset:hover i {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.main-nav ul li a:hover i {
+  transform: translateX(2px);
+  transition: transform 0.2s ease;
+}
+.check-mark i {
+  font-size: 2.5rem;
+}
+
+.success-title i {
+  margin-right: 0.5rem;
+  color: var(--main-yellow);
+}
+
+.success-message i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.success-details h3 i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.timeline-icon i {
+  font-size: 1.5rem;
+  color: var(--main-blue);
+}
+
+.btn-primary i,
+.btn-secondary i {
+  margin-right: 0.5rem;
+}
+
+.contact-info h3 i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.contact-icon {
+  font-size: 1.1rem;
+  color: var(--main-blue);
+  margin-right: 0.5rem;
+}
+
+.btn-primary:hover i,
+.btn-secondary:hover i {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.check-mark i {
+  animation: checkPulse 2s ease-in-out infinite;
+}
+
+@keyframes checkPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.highlight-box i {
+  margin-right: 0.5rem;
+  color: var(--main-yellow);
+}
+
+.info-list li i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+  font-size: 1rem;
+}
+
+.activity-title i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.activity-icon i {
+  font-size: 4rem;
+  color: var(--main-blue);
+}
+
+.activity-btn i {
+  margin-right: 0.5rem;
+}
+
+.floating-element i {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.airplane i {
+  font-size: 4rem;
+  color: white;
+}
+
+.info-card h3 i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.place-content h4 i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.video-section h2 i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.hero-btn i {
+  margin-right: 0.5rem;
+}
+
+.step-icon i {
+  font-size: 3rem;
+  color: var(--main-blue);
+}
+
+.step-title i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.service-item h4 i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.cta-btn i {
+  margin-right: 0.5rem;
+}
+
+.steps-section-title i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.services-title i {
+  margin-right: 0.5rem;
+  color: var(--main-blue);
+}
+
+.cta-title i {
+  margin-right: 0.5rem;
+  color: var(--main-yellow);
 }

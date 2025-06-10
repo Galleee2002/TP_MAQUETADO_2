@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>¡Gracias por tu consulta! - VIALUME</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <div class="main-container">
       <header class="main-header">
         <nav class="main-nav">
           <div class="logo-container">
-            <h1 class="logo"></h1>
+            <svg width="50" height="50" fill="white" viewBox="0 0 24 24" transform="" id="injected-svg"><!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free--><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2M4 12c0-.9.16-1.76.43-2.57L6 11l2 2v2l2 2 1 1v1.93c-3.94-.49-7-3.86-7-7.93m14.33 4.87c-.65-.53-1.64-.87-2.33-.87v-1c0-1.1-.9-2-2-2h-4v-3c1.1 0 2-.9 2-2V7h1c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 1.83-.63 3.52-1.67 4.87"></path></svg>
             <h2 class="site-title">VIALUME</h2>
           </div>
           <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="Secciones/actividades.html">ACTIVIDADES</a></li>
-            <li><a href="Secciones/argentina.html">SOBRE ARGENTINA</a></li>
-            <li><a href="Secciones/tuviaje.html">PLANEÁ TU VIAJE</a></li>
-            <li><a href="gracias.html"></a></li>
+            <li><a href="index.html"><i class='bx bx-home'></i> INICIO</a></li>
+            <li><a href="Secciones/actividades.html"><i class='bx bx-run'></i> ACTIVIDADES</a></li>
+            <li><a href="Secciones/argentina.html"><i class='bx bx-map'></i> SOBRE ARGENTINA</a></li>
+            <li><a href="Secciones/tuviaje.html"><i class='bx bx-calendar-check'></i> PLANEÁ TU VIAJE</a></li>
           </ul>
         </nav>
       </header>
@@ -27,22 +28,33 @@
       <section class="success-section">
         <div class="success-container">
           <div class="success-icon">
-            <div class="check-mark">✓</div>
+            <div class="check-mark">
+              <i class='bx bx-check'></i>
+            </div>
           </div>
 
-          <h1 class="success-title">¡Consulta Enviada con Éxito!</h1>
+          <h1 class="success-title">
+            <i class='bx bx-party'></i>
+            ¡Consulta Enviada con Éxito!
+          </h1>
 
           <div class="success-content">
             <p class="success-message">
+              <i class='bx bx-heart'></i>
               Gracias por confiar en <strong>VIALUME</strong> para planificar tu
               próxima aventura por Argentina.
             </p>
 
             <div class="success-details">
-              <h3>¿Qué sucede ahora?</h3>
+              <h3>
+                <i class='bx bx-info-circle'></i>
+                ¿Qué sucede ahora?
+              </h3>
               <div class="timeline">
                 <div class="timeline-item">
-                  <div class="timeline-icon">📧</div>
+                  <div class="timeline-icon">
+                    <i class='bx bx-envelope'></i>
+                  </div>
                   <div class="timeline-content">
                     <h4>Confirmación inmediata</h4>
                     <p>
@@ -52,7 +64,9 @@
                 </div>
 
                 <div class="timeline-item">
-                  <div class="timeline-icon">👥</div>
+                  <div class="timeline-icon">
+                    <i class='bx bx-group'></i>
+                  </div>
                   <div class="timeline-content">
                     <h4>Análisis personalizado</h4>
                     <p>
@@ -62,7 +76,9 @@
                 </div>
 
                 <div class="timeline-item">
-                  <div class="timeline-icon">📞</div>
+                  <div class="timeline-icon">
+                    <i class='bx bx-phone-call'></i>
+                  </div>
                   <div class="timeline-content">
                     <h4>Contacto directo</h4>
                     <p>
@@ -76,29 +92,32 @@
 
             <div class="success-actions">
               <a href="index.html" class="btn-primary">
-                <span>🏠</span>
+                <i class='bx bx-home-alt'></i>
                 Volver al Inicio
               </a>
 
               <a href="Secciones/actividades.html" class="btn-secondary">
-                <span>🗺️</span>
+                <i class='bx bx-map-alt'></i>
                 Explorar Actividades
               </a>
             </div>
 
             <div class="contact-info">
-              <h3>¿Tienes alguna pregunta urgente?</h3>
+              <h3>
+                <i class='bx bx-help-circle'></i>
+                ¿Tienes alguna pregunta urgente?
+              </h3>
               <div class="contact-methods">
                 <div class="contact-item">
-                  <span class="contact-icon">📧</span>
+                  <i class='bx bx-envelope contact-icon'></i>
                   <span>info@vialume.com.ar</span>
                 </div>
                 <div class="contact-item">
-                  <span class="contact-icon">📱</span>
+                  <i class='bx bx-phone contact-icon'></i>
                   <span>+54 11 1234-5678</span>
                 </div>
                 <div class="contact-item">
-                  <span class="contact-icon">💬</span>
+                  <i class='bx bxl-whatsapp contact-icon'></i>
                   <span>WhatsApp: +54 9 11 1234-5678</span>
                 </div>
               </div>
@@ -109,35 +128,49 @@
 
       <footer class="footer-section">
         <div class="footer-content">
-          <h2 class="footer-title">Información Académica</h2>
+          <h2 class="footer-title">
+            <i class='bx bx-graduation'></i>
+            Información Académica
+          </h2>
 
           <div class="footer-info">
             <div class="info-item">
-              <div class="info-label">Estudiante</div>
+              <div class="info-label">
+                <i class='bx bx-user-circle'></i>
+                Estudiante
+              </div>
               <div class="info-value">Gael García Núñez</div>
             </div>
 
             <div class="info-item">
-              <div class="info-label">Materia</div>
+              <div class="info-label">
+                <i class='bx bx-book-content'></i>
+                Materia
+              </div>
               <div class="info-value">Maquetado y Desarrollo Web</div>
             </div>
 
             <div class="info-item">
-              <div class="info-label">Docente a Cargo</div>
+              <div class="info-label">
+                <i class='bx bx-chalkboard'></i>
+                Docente a Cargo
+              </div>
               <div class="info-value">Carlos Ferrer</div>
             </div>
 
             <div class="info-item">
-              <div class="info-label">Institución</div>
+              <div class="info-label">
+                <i class='bx bx-buildings'></i>
+                Institución
+              </div>
               <div class="info-value">Escuela Da Vinci</div>
             </div>
           </div>
 
           <div class="footer-year">
+            <i class='bx bx-calendar-star'></i>
             Trabajo Práctico - Primer Cuatrimestre 2025
           </div>
         </div>
       </footer>
-    </div>
-  </body>
-</html>
+    </div
