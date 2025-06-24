@@ -3,36 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Activiades</title>
+    <title>Actividades</title>
     <link rel="stylesheet" href="../style.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <div class="main-container">
-      <header class="main-header">
-        <nav class="main-nav">s
+      <header class="main-header secondary-header">
+        <nav class="main-nav">
           <div class="logo-container">
-            <svg width="50" height="50" fill="white" viewBox="0 0 24 24"><!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free--><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2M4 12c0-.9.16-1.76.43-2.57L6 11l2 2v2l2 2 1 1v1.93c-3.94-.49-7-3.86-7-7.93m14.33 4.87c-.65-.53-1.64-.87-2.33-.87v-1c0-1.1-.9-2-2-2h-4v-3c1.1 0 2-.9 2-2V7h1c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 1.83-.63 3.52-1.67 4.87"></path></svg>
+            <svg width="50" height="50" fill="white" viewBox="0 0 24 24">
+              <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2M4 12c0-.9.16-1.76.43-2.57L6 11l2 2v2l2 2 1 1v1.93c-3.94-.49-7-3.86-7-7.93m14.33 4.87c-.65-.53-1.64-.87-2.33-.87v-1c0-1.1-.9-2-2-2h-4v-3c1.1 0 2-.9 2-2V7h1c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 1.83-.63 3.52-1.67 4.87"></path>
+            </svg>
             <h2 class="site-title">VIALUME</h2>
           </div>
           <ul>
             <li><a href="../index.html"><i class='bx bx-home'></i> INICIO</a></li>
-            <li><a href="actividades.html"><i class='bx bx-run'></i> ACTIVIDADES</a></li>
+            <li><a href="actividades.html" class="active"><i class='bx bx-run'></i> ACTIVIDADES</a></li>
             <li><a href="argentina.html"><i class='bx bx-map'></i> SOBRE ARGENTINA</a></li>
             <li><a href="tuviaje.html"><i class='bx bx-calendar-check'></i> PLANEÁ TU VIAJE</a></li>
           </ul>
         </nav>
+        
+        <section class="page-hero">
+          <div class="page-hero-content">
+            <h1 class="page-hero-title">
+              <i class='bx bx-star'></i>
+              Nuestras Actividades
+            </h1>
+            <p class="page-hero-description">
+              Descubrí todo lo que tenemos preparado para hacer de tu viaje una experiencia inolvidable
+            </p>
+          </div>
+        </section>
       </header>
-      <section class="activities-section">
-        <h2 class="section-title">
-          <i class='bx bx-star section-icon'></i>
-          Nuestras Actividades
-        </h2>
-        <p class="section-subtitle">
-          Descubrí todo lo que tenemos preparado para hacer de tu viaje una
-          experiencia inolvidable
-        </p>
 
+      <section class="activities-section">
         <div class="activities-container">
           <div class="activity-card">
             <div class="activity-icon">
@@ -43,9 +49,7 @@
               Salud & Bienestar
             </h3>
             <p class="activity-description">
-              Tu salud es nuestra prioridad. Ofrecemos información completa
-              sobre cuidados médicos, seguros de viaje y recomendaciones
-              sanitarias para que disfrutes tu aventura con total tranquilidad.
+              Tu salud es nuestra prioridad. Ofrecemos información completa sobre cuidados médicos, seguros de viaje y recomendaciones sanitarias para que disfrutes tu aventura con total tranquilidad.
             </p>
             <ul class="info-list">
               <li><i class='bx bx-injection'></i> Asesoramiento sobre vacunas necesarias según destino</li>
@@ -57,9 +61,7 @@
             </ul>
             <div class="highlight-box">
               <i class='bx bx-bulb'></i>
-              <strong>Tip de Viajero:</strong> Consultá con nuestro equipo
-              médico especializado al menos 30 días antes de tu viaje para
-              preparar todo lo necesario.
+              <strong>Tip de Viajero:</strong> Consultá con nuestro equipo médico especializado al menos 30 días antes de tu viaje para preparar todo lo necesario.
             </div>
             <a href="#" class="activity-btn">
               <i class='bx bx-search-alt'></i>
@@ -69,16 +71,14 @@
 
           <div class="activity-card">
             <div class="activity-icon">
-              <i class='bx  bx-paper-plane'  ></i> 
-                        </div>
+              <i class='bx bx-paper-plane'></i> 
+            </div>
             <h3 class="activity-title">
               <i class='bx bx-calendar-event'></i>
               Planificación de Viajes
             </h3>
             <p class="activity-description">
-              Organizamos cada detalle de tu viaje para que solo te preocupes
-              por disfrutar. Desde vuelos hasta alojamientos, todo está
-              cuidadosamente planificado para tu comodidad.
+              Organizamos cada detalle de tu viaje para que solo te preocupes por disfrutar. Desde vuelos hasta alojamientos, todo está cuidadosamente planificado para tu comodidad.
             </p>
             <ul class="info-list">
               <li><i class='bx bx-plane'></i> Reserva de vuelos nacionales e internacionales</li>
@@ -90,9 +90,7 @@
             </ul>
             <div class="highlight-box">
               <i class='bx bx-crown'></i>
-              <strong>Servicio Exclusivo:</strong> Nuestros travel managers
-              están disponibles las 24 horas para asistirte en cualquier
-              imprevisto durante tu viaje.
+              <strong>Servicio Exclusivo:</strong> Nuestros travel managers están disponibles las 24 horas para asistirte en cualquier imprevisto durante tu viaje.
             </div>
             <a href="#" class="activity-btn">
               <i class='bx bx-edit'></i>
@@ -109,9 +107,7 @@
               Recorridos & Excursiones
             </h3>
             <p class="activity-description">
-              Descubrí Argentina a través de nuestros recorridos especializados.
-              Cada excursión está diseñada para mostrarte lo mejor de cada
-              destino con guías expertos locales.
+              Descubrí Argentina a través de nuestros recorridos especializados. Cada excursión está diseñada para mostrarte lo mejor de cada destino con guías expertos locales.
             </p>
             <ul class="info-list">
               <li><i class='bx bx-building'></i> City tours en Buenos Aires, Mendoza, Bariloche y Salta</li>
@@ -123,9 +119,7 @@
             </ul>
             <div class="highlight-box">
               <i class='bx bx-diamond'></i>
-              <strong>Experiencia Premium:</strong> Todos nuestros recorridos
-              incluyen guías certificados, transporte de primera clase y acceso
-              exclusivo a sitios especiales.
+              <strong>Experiencia Premium:</strong> Todos nuestros recorridos incluyen guías certificados, transporte de primera clase y acceso exclusivo a sitios especiales.
             </div>
             <a href="#" class="activity-btn">
               <i class='bx bx-show-alt'></i>
@@ -142,10 +136,7 @@
               Paquetes Integrales VIALUME
             </h3>
             <p class="activity-description">
-              Combinamos salud, planificación y recorridos en paquetes únicos
-              que incluyen todo lo necesario para una experiencia de viaje
-              completa y sin preocupaciones. Cada paquete está diseñado para
-              diferentes tipos de viajeros y presupuestos.
+              Combinamos salud, planificación y recorridos en paquetes únicos que incluyen todo lo necesario para una experiencia de viaje completa y sin preocupaciones. Cada paquete está diseñado para diferentes tipos de viajeros y presupuestos.
             </p>
             <ul class="info-list">
               <li><i class='bx bx-cycling'></i> Paquete "Aventurero": Patagonia completa con seguros y guías especializados</li>
@@ -157,9 +148,7 @@
             </ul>
             <div class="highlight-box">
               <i class='bx bx-star'></i>
-              <strong>Ventaja Especial:</strong> Los paquetes integrales
-              incluyen descuentos de hasta 25% comparado con servicios
-              individuales, más beneficios exclusivos y upgrades sin costo.
+              <strong>Ventaja Especial:</strong> Los paquetes integrales incluyen descuentos de hasta 25% comparado con servicios individuales, más beneficios exclusivos y upgrades sin costo.
             </div>
             <a href="#" class="activity-btn">
               <i class='bx bx-search-alt-2'></i>
@@ -168,6 +157,7 @@
           </div>
         </div>
       </section>
+
       <footer class="footer-section">
         <div class="footer-content">
           <h2 class="footer-title">
